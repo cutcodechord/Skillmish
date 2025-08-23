@@ -1,0 +1,34 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:debug_stick",
+            "functions": [
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:item_name": "[{\"text\":\"<アイテム名>\",\"italic\":false}]",
+                  "minecraft:lore": [
+                    "[{\"text\":\"A\",\"italic\":false,\"color\":\"#FFFFFF\",\"font\":\"mosco:emoji\"},{\"text\":\" \",\"font\":\"default\"},{\"text\":\"レア度\",\"italic\":false,\"color\":\"#dddddd\",\"font\":\"default\"},{\"text\":\" >\",\"italic\":false,\"color\":\"#555555\",\"font\":\"default\"},{\"text\":\" 【\",\"italic\":false,\"color\":\"#dddddd\",\"font\":\"default\"},{\"text\":\"★\",\"italic\":false,\"color\":\"#77DF6D\",\"font\":\"default\"},{\"text\":\"☆☆☆☆\",\"italic\":false,\"color\":\"#dddddd\",\"font\":\"default\"},{\"text\":\"】\",\"italic\":false,\"color\":\"#dddddd\",\"font\":\"default\"}]",
+                    "[{\"text\":\"B\",\"italic\":false,\"color\":\"#FFFFFF\",\"font\":\"mosco:emoji\"},{\"text\":\" \",\"font\":\"default\"},{\"text\":\"属性\",\"italic\":false,\"color\":\"#dddddd\",\"font\":\"default\"},{\"text\":\" >\",\"italic\":false,\"color\":\"#555555\",\"font\":\"default\"},{\"text\":\" 属性1\",\"italic\":false,\"color\":\"#FFFFFF\",\"font\":\"default\"},{\"text\":\" | \",\"italic\":false,\"color\":\"#555555\",\"font\":\"default\"},{\"text\":\"属性2\",\"italic\":false,\"color\":\"#FFFFFF\",\"font\":\"default\"}]",
+                    "[{\"text\":\"?\",\"italic\":false,\"color\":\"#FFFFFF\",\"font\":\"mosco:emoji\"},{\"text\":\" \",\"font\":\"default\"},{\"text\":\"???\",\"italic\":false,\"color\":\"#dddddd\",\"font\":\"default\"},{\"text\":\" >\",\"italic\":false,\"color\":\"#555555\",\"font\":\"default\"},{\"text\":\" ? \",\"italic\":false,\"color\":\"#77DF6D\",\"font\":\"default\"},{\"text\":\"<単位>\",\"italic\":false,\"color\":\"#dddddd\",\"font\":\"default\"}]",
+                    "[{\"text\":\"・････━━━━━━━━━━━━━━━━━━━━━━････・\",\"italic\":false,\"color\":\"#777777\",\"font\":\"default\"}]",
+                    "[{\"text\":\" あああああああああああああああ\",\"italic\":false,\"color\":\"#dddddd\"}]",
+                    "[{\"text\":\" いいいいいいいいいいいいいいい\",\"italic\":false,\"color\":\"#dddddd\"}]",
+                    "[{\"text\":\"・････━━━━━━━━━━━━━━━━━━━━━━････・\",\"italic\":false,\"color\":\"#777777\",\"font\":\"default\"}]"
+                  ],
+                  "minecraft:hide_additional_tooltip": {},
+                  "minecraft:custom_data": {
+                    "mosco.0.template": true
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

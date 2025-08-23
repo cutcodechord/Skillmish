@@ -1,0 +1,21 @@
+#> skill:power_gain/loop
+#
+
+# effectがなくなったら
+    execute as @s unless entity @s[nbt={active_effects:[{id:"minecraft:health_boost"}]}] run effect give @s minecraft:health_boost infinite 1 true
+    execute as @s unless entity @s[nbt={active_effects:[{id:"minecraft:strength"}]}] run effect give @s minecraft:strength infinite 1 true
+    execute as @s unless entity @s[nbt={active_effects:[{id:"minecraft:night_vision"}]}] run effect give @s minecraft:night_vision infinite 0 true
+    execute as @s unless entity @s[nbt={active_effects:[{id:"minecraft:speed"}]}] run effect give @s minecraft:speed infinite 0 true
+    execute as @s unless entity @s[nbt={active_effects:[{id:"minecraft:jump_boost"}]}] run effect give @s minecraft:jump_boost infinite 0 true
+    execute as @s unless entity @s[nbt={active_effects:[{id:"minecraft:haste"}]}] run effect give @s minecraft:haste infinite 1 true
+
+# 死んだら
+    execute as @s if score @s skillmish.skill.death matches 1.. run effect give @s instant_health 1 1 true
+    execute as @s if score @s skillmish.skill.death matches 1.. run scoreboard players set @s skillmish.skill.death 0
+
+# アイテム配置
+    execute unless items entity @s hotbar.0 name_tag[minecraft:custom_data={"skillmish.skill.item.power_gain":"true"}] run function c3func:inventory_manage/item_reset {slot:"hotbar.0",item:"minecraft:name_tag[minecraft:item_model=\"minecraft:netherite_sword\",minecraft:item_name='[{\"text\":\"[ \",\"color\":\"gray\"},{\"text\":\"Power Gain\",\"color\":\"red\"},{\"text\":\" ]\",\"color\":\"gray\"}]',minecraft:custom_data={\"skillmish.skill.item.power_gain\":\"true\"},minecraft:lore=['[\"\",{\"text\":\"力をみなぎらせるスキル\",\"italic\":false,\"color\":\"white\"}]','[\"\",{\"text\":\"オラオラオラオラオラオラ\",\"italic\":false,\"color\":\"gray\"}]','[\"\"]','[\"\",{\"text\":\"使用方法\",\"italic\":false,\"color\":\"white\"},{\"text\":\" - \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"常時\",\"italic\":false,\"color\":\"light_purple\"}]','[\"\",{\"text\":\"使用効果\",\"italic\":false,\"color\":\"white\"},{\"text\":\" - \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"移動速度上昇 I\",\"italic\":false,\"color\":\"green\"}]','[\"\",{\"text\":\"　　　　\",\"italic\":false,\"color\":\"white\"},{\"text\":\" - \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"暗視 I\",\"italic\":false,\"color\":\"green\"}]','[\"\",{\"text\":\"　　　　\",\"italic\":false,\"color\":\"white\"},{\"text\":\" - \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"採掘速度上昇 II\",\"italic\":false,\"color\":\"green\"}]','[\"\",{\"text\":\"　　　　\",\"italic\":false,\"color\":\"white\"},{\"text\":\" - \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"体力増強 II\",\"italic\":false,\"color\":\"green\"}]','[\"\",{\"text\":\"　　　　\",\"italic\":false,\"color\":\"white\"},{\"text\":\" - \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"跳躍力上昇 I\",\"italic\":false,\"color\":\"green\"}]','[\"\",{\"text\":\"　　　　\",\"italic\":false,\"color\":\"white\"},{\"text\":\" - \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"攻撃力上昇 I\",\"italic\":false,\"color\":\"green\"}]']]"}
+
+# アイテム消去
+    function c3func:inventory_manage/item_delete {delete_item_custom_data:"{\"skillmish.skill.item.power_gain\":\"true\"}"}
+
