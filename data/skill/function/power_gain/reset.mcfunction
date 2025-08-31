@@ -13,6 +13,8 @@
     effect clear @s minecraft:haste
     attribute @s minecraft:attack_speed base set 4.8
     tag @s remove skillmish.skill.confirmed_0
+    tag @s remove skillmish.skill.confirmed_1
+    tag @s remove skillmish.skill.confirmed_2
 
 
     

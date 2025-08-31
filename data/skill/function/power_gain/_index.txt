@@ -1,0 +1,21 @@
+#> skill:power_gain/_index.txt
+#
+
+# power_gain memo
+
+    item_components:
+        1 - minecraft:name_tag[minecraft:item_model="minecraft:fire_charge",minecraft:item_name='[{"text":"[ ","color":"gray"},{"text":"Power Gain","color":"red"},{"text":" ]","color":"gray"}]',minecraft:custom_data={"skillmish.skill.item.power_gain_icon":"true"},minecraft:lore=['["",{"text":"力をみなぎらせるスキル","italic":false,"color":"white"}]','["",{"text":"オラオラオラオラオラオラ","italic":false,"color":"gray"}]','[""]','["",{"text":"使用方法","italic":false,"color":"white"},{"text":" - ","italic":false,"color":"gray"},{"text":"常時","italic":false,"color":"light_purple"}]','["",{"text":"使用効果","italic":false,"color":"white"},{"text":" - ","italic":false,"color":"gray"},{"text":"移動速度上昇 I","italic":false,"color":"green"}]','["",{"text":"　　　　","italic":false,"color":"white"},{"text":" - ","italic":false,"color":"gray"},{"text":"暗視 I","italic":false,"color":"green"}]','["",{"text":"　　　　","italic":false,"color":"white"},{"text":" - ","italic":false,"color":"gray"},{"text":"採掘速度上昇 II","italic":false,"color":"green"}]','["",{"text":"　　　　","italic":false,"color":"white"},{"text":" - ","italic":false,"color":"gray"},{"text":"体力増強 II","italic":false,"color":"green"}]','["",{"text":"　　　　","italic":false,"color":"white"},{"text":" - ","italic":false,"color":"gray"},{"text":"跳躍力上昇 I","italic":false,"color":"green"}]','["",{"text":"　　　　","italic":false,"color":"white"},{"text":" - ","italic":false,"color":"gray"},{"text":"攻撃力上昇 I","italic":false,"color":"green"}]']]
+        2 - minecraft:name_tag[minecraft:item_model=\"minecraft:fire_charge\",minecraft:item_name='[{\"text\":\"[ \",\"color\":\"gray\"},{\"text\":\"Power Gain\",\"color\":\"red\"},{\"text\":\" ]\",\"color\":\"gray\"}]',minecraft:custom_data={\"skillmish.skill.item.power_gain_icon\":\"true\"},minecraft:lore=['[\"\",{\"text\":\"力をみなぎらせるスキル\",\"italic\":false,\"color\":\"white\"}]','[\"\",{\"text\":\"オラオラオラオラオラオラ\",\"italic\":false,\"color\":\"gray\"}]','[\"\"]','[\"\",{\"text\":\"使用方法\",\"italic\":false,\"color\":\"white\"},{\"text\":\" - \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"常時\",\"italic\":false,\"color\":\"light_purple\"}]','[\"\",{\"text\":\"使用効果\",\"italic\":false,\"color\":\"white\"},{\"text\":\" - \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"移動速度上昇 I\",\"italic\":false,\"color\":\"green\"}]','[\"\",{\"text\":\"　　　　\",\"italic\":false,\"color\":\"white\"},{\"text\":\" - \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"暗視 I\",\"italic\":false,\"color\":\"green\"}]','[\"\",{\"text\":\"　　　　\",\"italic\":false,\"color\":\"white\"},{\"text\":\" - \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"採掘速度上昇 II\",\"italic\":false,\"color\":\"green\"}]','[\"\",{\"text\":\"　　　　\",\"italic\":false,\"color\":\"white\"},{\"text\":\" - \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"体力増強 II\",\"italic\":false,\"color\":\"green\"}]','[\"\",{\"text\":\"　　　　\",\"italic\":false,\"color\":\"white\"},{\"text\":\" - \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"跳躍力上昇 I\",\"italic\":false,\"color\":\"green\"}]','[\"\",{\"text\":\"　　　　\",\"italic\":false,\"color\":\"white\"},{\"text\":\" - \",\"italic\":false,\"color\":\"gray\"},{\"text\":\"攻撃力上昇 I\",\"italic\":false,\"color\":\"green\"}]']]
+
+    tags:
+         - skillmish.skill.item.power_gain
+         - skillmish.skill.item.power_gain_1
+         - skillmish.skill.item.power_gain_2
+         - skillmish.skill.item.power_gain_3
+    
+    custom_data:
+         - skillmish.skill.item.power_gain_icon
+         - skillmish.skill.item.power_gain
+    
+    scoreboard:
+        - skillmish.skill.power_gain.item_damage

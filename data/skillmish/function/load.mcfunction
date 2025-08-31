@@ -13,4 +13,5 @@
 
 # power_gain
     scoreboard objectives add skillmish.skill.power_gain.item_damage dummy
+
     execute as @a unless score @s skillmish.skill.ready matches -2147483648..2147483647 run scoreboard players set @s skillmish.skill.ready 0
