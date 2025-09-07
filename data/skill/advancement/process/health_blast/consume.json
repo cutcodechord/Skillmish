@@ -1,0 +1,19 @@
+{
+    "criteria": {
+      "consume": {
+        "trigger": "minecraft:consume_item",
+        "conditions": {
+          "item": {
+            "components": {
+              "minecraft:custom_data": {
+                "skillmish.skill.item.health_blast_item": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "skill:health_blast/used"
+    }
+}

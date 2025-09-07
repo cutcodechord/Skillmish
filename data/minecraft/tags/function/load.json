@@ -1,6 +1,7 @@
 {
     "values":[
          "skillmish:load",
-         "c3func:load"
+         "c3func:load",
+         "player_motion:internal/technical/load"
     ]
 }

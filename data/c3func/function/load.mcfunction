@@ -34,4 +34,4 @@
 # Common
     kill @e[type=armor_stand,tag=c3func.reduce_item.amstd]
     forceload add 100000 100000
-    summon minecraft:armor_stand 100001 -64 100000 {Small:1b,Invisible:1b,Marker:1b,Invulnerable:1b,NoAI:1b,NoGravity:1b,Tags:["c3func.reduce_item.amstd"]}
+    summon minecraft:armor_stand 100001 -64 100000 {Small:1b,Invisible:1b,Marker:1b,Invulnerable:1b,NoGravity:1b,Tags:["c3func.reduce_item.amstd"]}

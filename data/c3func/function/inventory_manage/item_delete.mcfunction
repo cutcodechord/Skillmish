@@ -3,6 +3,8 @@
 
 # アイテムを消去
     $execute if items entity @s player.cursor *[minecraft:custom_data=$(delete_item_custom_data)] run item replace entity @s player.cursor with minecraft:air
+    
+    $execute if items entity @s weapon.offhand *[minecraft:custom_data=$(delete_item_custom_data)] run item replace entity @s weapon.offhand with minecraft:air
 
     $execute if items entity @s hotbar.3 *[minecraft:custom_data=$(delete_item_custom_data)] run item replace entity @s hotbar.3 with minecraft:air
     $execute if items entity @s hotbar.4 *[minecraft:custom_data=$(delete_item_custom_data)] run item replace entity @s hotbar.4 with minecraft:air
@@ -38,8 +40,6 @@
     $execute if items entity @s inventory.24 *[minecraft:custom_data=$(delete_item_custom_data)] run item replace entity @s inventory.24 with minecraft:air
     $execute if items entity @s inventory.25 *[minecraft:custom_data=$(delete_item_custom_data)] run item replace entity @s inventory.25 with minecraft:air
     $execute if items entity @s inventory.26 *[minecraft:custom_data=$(delete_item_custom_data)] run item replace entity @s inventory.26 with minecraft:air
-    
-    $execute if items entity @s weapon.offhand *[minecraft:custom_data=$(delete_item_custom_data)] run item replace entity @s weapon.offhand with minecraft:air
 
     $execute if items entity @s player.crafting.0 *[minecraft:custom_data=$(delete_item_custom_data)] run item replace entity @s player.crafting.0 with minecraft:air
     $execute if items entity @s player.crafting.1 *[minecraft:custom_data=$(delete_item_custom_data)] run item replace entity @s player.crafting.1 with minecraft:air
